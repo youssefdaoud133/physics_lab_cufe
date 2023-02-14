@@ -88,7 +88,7 @@ startbtn.onclick = () =>{
     let zel =parseFloat(document.querySelectorAll(`.zel`)[0].value) ;
     let zed =parseFloat(document.querySelectorAll(`.zed`)[0].value );
     let zem =parseFloat(document.querySelectorAll(`.zem`)[0].value);
-    let pd =(4*(m-zem)/(3.14*(d-zed)*(d-zed)*(l-zel)))
+    let pd =(4*(m-zem)/(3.14*(d-zed)*(d-zed)*.01*(l-zel)))
     document.querySelectorAll(`.pd`)[0].innerHTML = pd;
     
     g(zel)
