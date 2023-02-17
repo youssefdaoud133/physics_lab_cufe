@@ -1,5 +1,8 @@
 const g = console.log
-const shroot = document.querySelector(".shroot");
+const shroot = document.querySelector(".shroot"); 
+const copyright = document.querySelector(".copyright");
+
+copyright.textContent = `<Developed By> Youssef Daoud <All Copy Rights Reserved @2023>`
 shroot.onclick = () => {
     console.log("hello world");
     const shrttwo = document.querySelector(".shrttwo");
@@ -133,4 +136,53 @@ btnreset.onclick =() =>{
     sumd("M")
     document.querySelectorAll(`.pd`)[0].innerHTML =0
     document.querySelectorAll(`.dpd`)[0].innerHTML =0
+}
+
+/// equivelant
+
+const eq = document.querySelector(".eq");
+const Me = document.querySelector(".Me");
+const Equivalent = document.querySelector(".Equivalent");
+const equstart = document.querySelector(".equstart");
+const Measurments = document.querySelector(".Measurments");
+eq.onclick = () =>{
+    g(Measurments)
+    Measurments.style.display ="none";
+    Equivalent.style.display ="flex";
+    Measurments.classList.add("off");
+    let leftcont = document.querySelector(".leftcont");
+    const rightcont = document.querySelector(".rightcont");
+    const ex = document.querySelector(".ex");
+    leftcont.classList.remove("morewidth");
+    rightcont.classList.remove("lesswidth");
+    ex.classList.remove("fgaa");
+    
+    
+}
+Me.onclick = () =>{
+    g(Measurments)
+    Measurments.style.display ="flex";
+    Equivalent.style.display ="none";
+    Measurments.classList.add("off");
+    let leftcont = document.querySelector(".leftcont");
+    const rightcont = document.querySelector(".rightcont");
+    const ex = document.querySelector(".ex");
+    leftcont.classList.remove("morewidth");
+    rightcont.classList.remove("lesswidth");
+    ex.classList.remove("fgaa");
+    
+    
+}
+const qer = document.querySelectorAll(".qer")
+const res = document.querySelectorAll(".res")
+equstart.onclick = () =>{
+    const w =parseFloat(qer[4].value) * parseFloat(qer[5].value) * parseFloat(qer[8].value*60)
+    const q = ((parseFloat(qer[1].value) * parseFloat(qer[3].value))+(parseFloat(qer[0].value) * parseFloat(qer[2].value)))*(parseFloat(qer[7].value) - parseFloat(qer[6].value))
+    res[0].innerHTML = ` dT = ${ parseFloat(qer[7].value) - parseFloat(qer[6].value)}` 
+    res[1].innerHTML = ` Time (second) = ${ parseFloat(qer[8].value) * 60}` 
+    res[2].innerHTML = ` PW = ${ parseFloat(qer[4].value) * parseFloat(qer[5].value)}` 
+    res[3].innerHTML = ` Q = ${ ((parseFloat(qer[1].value) * parseFloat(qer[3].value))+(parseFloat(qer[0].value) * parseFloat(qer[2].value)))*(parseFloat(qer[7].value) - parseFloat(qer[6].value))}` 
+    res[4].innerHTML = ` W = ${ parseFloat(qer[4].value) * parseFloat(qer[5].value) * parseFloat(qer[8].value) * 60}`
+    res[5].innerHTML = ` J = ${ w/q}` 
+
 }

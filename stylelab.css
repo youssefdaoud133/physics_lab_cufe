@@ -7,6 +7,27 @@
     width: 70vw;
     /* background-color: aqua; */
 }
+
+.Equivalent{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    width: 70vw;
+}
+.copyy{
+    width: 80vw;
+   
+    
+
+}
+.sendcont{
+    background-color: #f0f0f0;
+}
+.copyright{
+    font-size: 2rem;
+}
 .firstdiv{
     display: flex;
     flex-direction: row;
@@ -77,6 +98,9 @@
     .Measurments{
         width: 95vw;
     }
+    .Equivalent{
+        width: 95vw;
+    }
     .firstdiv{
         
         width: 95vw;
@@ -116,6 +140,9 @@
     .Measurments{
         width: 100vw;
     }
+    .Equivalent{
+        width: 100vw;
+    }
     .firstdiv{
         
         width: 100vw;
@@ -159,10 +186,16 @@
     .firstdiv{
         flex-wrap: wrap;
     }
+    .copyright{
+        font-size: 1rem;
+    }
     
 }
 @media screen and (max-width: 326px) {
     .Measurments{
+        width: 100vw;
+    }
+    .Equivalent{
         width: 100vw;
     }
     .firstdiv{
@@ -207,5 +240,8 @@
         width: 93.33vw;
         max-height: 66vh;
         /* background-color: orange; */
+    }
+    .copyright{
+        font-size: 1rem;
     }
 }
