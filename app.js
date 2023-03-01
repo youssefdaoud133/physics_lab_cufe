@@ -148,6 +148,7 @@ const Measurments = document.querySelector(".Measurments");
 eq.onclick = () =>{
     g(Measurments)
     Measurments.style.display ="none";
+    Venturi.style.display ="none";
     Equivalent.style.display ="flex";
     Measurments.classList.add("off");
     let leftcont = document.querySelector(".leftcont");
