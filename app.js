@@ -186,3 +186,33 @@ equstart.onclick = () =>{
     res[5].innerHTML = ` J = ${ w/q}` 
 
 }
+
+
+
+
+
+
+// Venturi
+const Venturi = document.querySelector(".Venturi");
+const ve = document.querySelector(".ve");
+const v = document.querySelectorAll(".ven")
+ve.onclick = () =>{
+    Measurments.style.display ="none";
+    Equivalent.style.display ="none";
+    Venturi.style.display ="flex";
+    let leftcont = document.querySelector(".leftcont");
+    const rightcont = document.querySelector(".rightcont");
+    const ex = document.querySelector(".ex");
+    leftcont.classList.remove("morewidth");
+    rightcont.classList.remove("lesswidth");
+    ex.classList.remove("fgaa");
+}
+v[6].onclick = () =>{
+    let A1 = 3.14/4 * parseFloat(v[0].value)* parseFloat(v[0].value);
+    let A2 = 3.14/4 * parseFloat(v[1].value)* parseFloat(v[1].value);
+    let DH =parseFloat(v[2].value);
+    let Q =(A1 * A2)* Math.sqrt((2*9.8*DH) / (A1*A1-A2*A2));
+    v[3].innerHTML = `A1 = ${A1}`;
+    v[4].innerHTML = `A1 = ${A2}`;
+    v[5].innerHTML = `Q = ${Q}`;
+}

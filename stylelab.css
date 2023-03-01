@@ -16,6 +16,14 @@
     max-height: 100vh;
     width: 70vw;
 }
+.Venturi{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    width: 70vw;
+}
 .copyy{
     width: 80vw;
    
@@ -101,6 +109,9 @@
     .Equivalent{
         width: 95vw;
     }
+    .Venturi{
+        width: 95vw;
+    }
     .firstdiv{
         
         width: 95vw;
@@ -141,6 +152,9 @@
         width: 100vw;
     }
     .Equivalent{
+        width: 100vw;
+    }
+    .Venturi{
         width: 100vw;
     }
     .firstdiv{
@@ -196,6 +210,9 @@
         width: 100vw;
     }
     .Equivalent{
+        width: 100vw;
+    }
+    .Venturi{
         width: 100vw;
     }
     .firstdiv{
